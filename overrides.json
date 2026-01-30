@@ -2,7 +2,8 @@
   "global": {},
   "components": {
     "announcementCard": {
-      "disabled": true
+      "disabled": true,
+      "ctaUrl": "https://docs.lagoon.sh/releases/2.30.0/"
     }
   }
 }

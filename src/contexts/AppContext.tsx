@@ -31,7 +31,9 @@ const AppProvider = ({ children, kcUrl, logo }: { children: ReactNode; kcUrl: st
 
   const userData = status === 'authenticated' ? data.user : { name: '', email: '', image: '' };
 
-  const { LAGOON_UI_ICON, LAGOON_VERSION } = useEnvContext();
+  const { LAGOON_UI_ICON, LAGOON_VERSION, LAGOON_UI_YOUR_ACCOUNT_DISABLED } = useEnvContext();
+
+  const disableAccountLink = Boolean(LAGOON_UI_YOUR_ACCOUNT_DISABLED);
 
   const pathname = usePathname();
 
@@ -81,6 +83,7 @@ const AppProvider = ({ children, kcUrl, logo }: { children: ReactNode; kcUrl: st
         sidenavItems={sidenavItems}
         cardProps={overrides?.components?.announcementCard}
         documentationUrl={overrides?.global?.documentationUrl}
+        disableAccountLink={disableAccountLink}
       >
         <div className="absolute top-2 right-4">
           <ThemeSwitch />

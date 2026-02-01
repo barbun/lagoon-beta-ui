@@ -103,13 +103,11 @@ export default function DeploymentPage({
       <Loader2 className="h-4 w-4 animate-spin t"/>}
     </Badge>,
     name: deployment.bulkId ? (
-      <section className="flex items-center ">
+      <section className="flex items-center">
         <p>{deployment.name}</p>
-        <div className="bulk-link bg-blue-400 hover:bg-blue-600 py-1 px-2 translate-x-4/5 mr-3 rounded-sm transition-colors">
-          <Link className="text-white" href={`/bulkdeployment/${deployment.bulkId}`}>
-            BULK
-          </Link>
-        </div>
+        <Link className="px-2 py-1 bg-sky-500 text-white rounded text-sm hover:bg-sky-600 transition-colors whitespace-nowrap mr-10" href={`/bulkdeployment/${deployment.bulkId}`}>
+          BULK
+        </Link>
       </section>
     ) : (
       deployment.name

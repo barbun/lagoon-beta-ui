@@ -98,11 +98,9 @@ const getDeploymentTableColumns = (basePath: string) =>
               {name}
             </Link>
             {bulkId ? (
-              <div className="bulk-link bg-blue-400 hover:bg-blue-600 py-1 px-2 mr-10 rounded-sm transition-colors">
-                <Link className="text-white" href={`/bulkdeployment/${bulkId}`}>
-                  BULK
-                </Link>
-              </div>
+              <Link className="px-2 py-1 bg-sky-500 text-white rounded text-sm hover:bg-sky-600 transition-colors whitespace-nowrap mr-10" href={`/bulkdeployment/${bulkId}`}>
+                BULK
+              </Link>
             ) : null}
           </section>
         );

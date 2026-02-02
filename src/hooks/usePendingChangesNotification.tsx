@@ -1,7 +1,7 @@
 import { useEffect, useRef } from 'react';
 import { useRouter, usePathname } from 'next/navigation';
 import { toast } from 'sonner';
-import {X} from "lucide-react";
+import { X } from "lucide-react";
 
 interface PendingChange {
   details: string;
@@ -18,7 +18,7 @@ interface UsePendingChangesNotificationOptions {
   // For single environment (EnvironmentPage)
   environment?: Environment;
   environmentSlug?: string;
-  
+
   // Custom deployment URL (optional)
   deploymentUrl?: string;
 }
@@ -37,11 +37,11 @@ export const usePendingChangesNotification = (options: UsePendingChangesNotifica
     if (environment?.pendingChanges && environment.pendingChanges.length > 0) {
       const defaultDeploymentUrl = `/projects/${environment.project?.name}/${environmentSlug}/deployments`;
       const finalDeploymentUrl = deploymentUrl || defaultDeploymentUrl;
-      
+
       toast.custom(
         (t) => (
-          <div 
-            className="flex items-center gap-3 p-4 border border-sky-500 rounded-lg shadow-lg min-w-80 max-w-md bg-[#CFEDFB] text-black mt-4">
+          <div
+            className="flex items-center gap-3 p-4 border border-sky-500 rounded-lg shadow-lg min-w-80 max-w-md bg-[#CFEDFB] text-black mt-4 pointer-events-auto">
             <div className="flex-1">
               <p className="font-medium text-sm whitespace-nowrap">
                 Changes require deployment to take effect

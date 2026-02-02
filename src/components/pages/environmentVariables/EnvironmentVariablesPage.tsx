@@ -12,7 +12,7 @@ import { usePendingChangesNotification } from '@/hooks/usePendingChangesNotifica
 import environmentByProjectNameWithEnvVarsValueQuery from '@/lib/query/environmentByProjectNameWithEnvVarsValueQuery';
 import environmentProjectByProjectNameWithEnvVarsValueQuery from '@/lib/query/environmentProjectByProjectNameWithEnvVarsValueQuery';
 import { QueryRef, useLazyQuery, useQueryRefHandlers, useReadQuery } from '@apollo/client';
-import {DataTable, SelectWithOptions, Switch} from '@uselagoon/ui-library';
+import { DataTable, SelectWithOptions, Switch } from '@uselagoon/ui-library';
 import { useQueryStates } from 'nuqs';
 import { toast } from 'sonner';
 
@@ -23,7 +23,7 @@ import {
   getEnvVarsColumns,
 } from '../projectVariables/_components/DataTableColumns';
 import { scopeOptions, sortOptions } from './_components/filterValues';
-import {Lightbulb} from "lucide-react";
+import { Lightbulb } from "lucide-react";
 
 export const ProjectWarning = (type: string) => {
   if (type === 'delete') {
@@ -95,9 +95,8 @@ export default function EnvironmentVariablesPage({
       onError: err => {
         console.error(err);
         toast.error('Unauthorized', {
-          description: `You don't have permission to ${envAction} environment ${
-            envAction === 'view' ? ' variable values' : 'variables'
-          }. Contact your administrator to obtain the relevant permissions.`,
+          description: `You don't have permission to ${envAction} environment ${envAction === 'view' ? ' variable values' : 'variables'
+            }. Contact your administrator to obtain the relevant permissions.`,
         });
       },
       onCompleted: () => setEnvValuesVisible(true),
@@ -123,9 +122,8 @@ export default function EnvironmentVariablesPage({
     onError: err => {
       console.error(err);
       toast.error('Unauthorized', {
-        description: `You don't have permission to ${envAction} environment ${
-          envAction === 'view' ? ' variable values' : 'variables'
-        }. Contact your administrator to obtain the relevant permissions.`,
+        description: `You don't have permission to ${envAction} environment ${envAction === 'view' ? ' variable values' : 'variables'
+          }. Contact your administrator to obtain the relevant permissions.`,
       });
     },
   });
@@ -195,6 +193,7 @@ export default function EnvironmentVariablesPage({
       <div className="flex gap-2 items-center justify-between">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-2">Environment variables</h3>
         <Switch
+          data-testId="env-var-visibility-toggle"
           label="Edit environment values"
           disabled={envLoading}
           loading={envLoading}
@@ -249,10 +248,11 @@ export default function EnvironmentVariablesPage({
         />
       </div>
 
-      <section className="spacer my-8"><hr/></section>
+      <section className="spacer my-8"><hr /></section>
       <div className="flex gap-2 items-center justify-between">
         <h3 className="scroll-m-20 text-2xl font-semibold tracking-tight mb-2">Project variables</h3>
         <Switch
+          data-testId="project-var-visibility-toggle"
           label="Edit project values"
           disabled={prjLoading}
           loading={prjLoading}

@@ -28,8 +28,8 @@ const config: StorybookConfig = {
   refs: {
     'ui-library': {
       title: 'ui-library',
-      url: 'http://localhost:6006',
-      expanded: false, 
+      url: 'https://main--69698d15d02f1ad6e82d516e.chromatic.com',
+      expanded: false,
     },
   },
 

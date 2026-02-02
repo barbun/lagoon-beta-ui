@@ -94,7 +94,7 @@ const getDeploymentTableColumns = (basePath: string) =>
       cell: ({ row }) => {
         const { bulkId, name } = row.original;
         return (
-          <section className={`flex items-center ${bulkId ? 'justify-between pr-12' : ''}`}>
+          <section className={`flex items-center gap-4`}>
             <Link className="hover:text-blue-800 transition-colors" href={`${basePath}/${name}`}>
               {name}
             </Link>

@@ -12,9 +12,10 @@ import { RoutesDataTableColumns } from './_components/RoutesDataTableColumns';
 import React from "react";
 
 
-export default function EnvironmentRoutesPage({queryRef,	projectName,}: {
+export default function EnvironmentRoutesPage({queryRef, projectName, environmentName}: {
 	queryRef: QueryRef<EnvironmentRoutesData>;
 	projectName: string;
+	environmentName: string;
 }) {
 	const [{ results, route_query }, setQuery] = useQueryStates({
 		results: {
@@ -48,7 +49,7 @@ export default function EnvironmentRoutesPage({queryRef,	projectName,}: {
 	// Show notification for pending changes
 	usePendingChangesNotification({
 		environment: environmentRoutes,
-		environmentSlug: environmentRoutes.name,
+		environmentSlug: environmentName,
 	});
 
 	return (

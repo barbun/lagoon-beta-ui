@@ -7,5 +7,26 @@
     "sidenavFooterMenu": {
       "disableChangeFeedLink": true
     }
+  },
+  "branding": {
+    "logo": "/branding/logo.svg",
+    "logoDark": "/branding/logo-dark.svg",
+    "appName": "ACME Corp"
+  },
+  "theme": {
+    "light": {
+      "sidebar": "#f8f9fa",
+      "sidebarForeground": "#1c2b4a",
+      "sidebarAccent": "#e9ecef",
+      "primary": "#00a0af",
+      "accent": "#e74c6e"
+    },
+    "dark": {
+      "sidebar": "#1c2b4a",
+      "sidebarForeground": "#ffffff",
+      "sidebarAccent": "#2a3d5c",
+      "primary": "#00a0af",
+      "accent": "#e74c6e"
+    }
   }
 }

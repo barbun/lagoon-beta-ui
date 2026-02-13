@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 160 40">
+  <defs>
+    <style>
+      .logo-shape { fill: #22d3ee; }
+      .logo-text { fill: #ffffff; font-family: system-ui, sans-serif; font-weight: 600; font-size: 20px; }
+    </style>
+  </defs>
+  <!-- Simple hexagon icon -->
+  <polygon class="logo-shape" points="20,2 35,10 35,26 20,34 5,26 5,10"/>
+  <text class="logo-text" x="45" y="26">ACME Corp</text>
+</svg>

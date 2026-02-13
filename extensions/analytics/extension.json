@@ -1,0 +1,45 @@
+{
+  "meta": {
+    "name": "analytics",
+    "version": "1.0.0",
+    "description": "Analytics dashboard for Lagoon"
+  },
+  "navigation": {
+    "items": [
+      {
+        "id": "project-analytics",
+        "label": "Analytics",
+        "href": "/projects/[projectSlug]/analytics",
+        "icon": "BarChart3",
+        "target": "project-tabs",
+        "position": "end"
+      }
+    ],
+    "sections": [
+      {
+        "section": "Analytics",
+        "position": "end",
+        "items": [
+          {
+            "id": "analytics-dashboard",
+            "label": "Dashboard",
+            "href": "/analytics",
+            "icon": "LayoutDashboard"
+          }
+        ]
+      }
+    ]
+  },
+  "pages": [
+    {
+      "route": "analytics",
+      "requiredRoles": ["platform-owner", "admin"]
+    },
+    {
+      "route": "projects/[projectSlug]/analytics"
+    }
+  ],
+  "features": {
+    "analytics": true
+  }
+}

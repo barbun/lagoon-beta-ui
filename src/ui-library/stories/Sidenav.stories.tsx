@@ -1,9 +1,19 @@
+import React, { forwardRef } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Controls, Primary, Stories, Story, Title } from '@storybook/addon-docs/blocks';
 import { Home, FolderOpen, Building2, Settings, HelpCircle } from 'lucide-react';
 
 import Sidenav from '../components/Sidenav';
+import { LinkProvider as NextLinkProvider } from '../providers/NextLinkProvider';
 import { SidebarProvider } from '../components/ui/sidebar';
+
+const MockLink = forwardRef<HTMLAnchorElement, React.AnchorHTMLAttributes<HTMLAnchorElement> & { href: string }>(
+	({ href, children, ...rest }, ref) => (
+		<a ref={ref} href={href} {...rest}>
+			{children}
+		</a>
+	)
+);
 
 const meta: Meta<typeof Sidenav> = {
 	component: Sidenav,
@@ -25,15 +35,17 @@ const meta: Meta<typeof Sidenav> = {
 	},
 	decorators: [
 		(Story) => (
-			<SidebarProvider>
-				<div style={{ height: '100vh', display: 'flex' }}>
-					<Story />
-					<div style={{ flex: 1, padding: '20px', backgroundColor: '#f5f5f5' }}>
-						<h2>Main Content Area</h2>
-						<p>This is where your main application content would appear.</p>
+			<NextLinkProvider linkComponent={MockLink}>
+				<SidebarProvider>
+					<div style={{ height: '100vh', display: 'flex' }}>
+						<Story />
+						<div style={{ flex: 1, padding: '20px', backgroundColor: '#f5f5f5' }}>
+							<h2>Main Content Area</h2>
+							<p>This is where your main application content would appear.</p>
+						</div>
 					</div>
-				</div>
-			</SidebarProvider>
+				</SidebarProvider>
+			</NextLinkProvider>
 		),
 	],
 };

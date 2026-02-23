@@ -1,9 +1,18 @@
-import React from 'react';
+import React, { forwardRef } from 'react';
 import { Meta, StoryObj } from '@storybook/react';
 import { Controls, Primary, Stories, Story, Title } from '@storybook/addon-docs/blocks';
 
 import RootLayout from '../components/RootLayout';
+import { LinkProvider as NextLinkProvider } from '../providers/NextLinkProvider';
 import { Building2, FolderOpen, HelpCircle, Home, Settings } from 'lucide-react';
+
+const MockLink = forwardRef<HTMLAnchorElement, React.AnchorHTMLAttributes<HTMLAnchorElement> & { href: string }>(
+	({ href, children, ...rest }, ref) => (
+		<a ref={ref} href={href} {...rest}>
+			{children}
+		</a>
+	)
+);
 
 const meta = {
 	component: RootLayout,
@@ -22,6 +31,13 @@ const meta = {
 			),
 		},
 	},
+	decorators: [
+		(Story) => (
+			<NextLinkProvider linkComponent={MockLink}>
+				<Story />
+			</NextLinkProvider>
+		),
+	],
 } satisfies Meta<typeof RootLayout>;
 
 type Story = StoryObj<typeof RootLayout>;

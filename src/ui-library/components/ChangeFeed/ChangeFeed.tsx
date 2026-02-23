@@ -1,5 +1,5 @@
 import { ChangeFeedItemProps, default as ChangeFeedItem } from './ChangeFeedItem';
-import Checkbox from "@/components/Checkbox";
+import Checkbox from "@ui-lib/components/Checkbox";
 import { useState, useMemo, useRef, useEffect } from "react";
 
 type ChangeFeedProps = {

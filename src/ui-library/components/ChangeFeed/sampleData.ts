@@ -1,4 +1,4 @@
-import { ChangeFeedItemProps } from "@/components/ChangeFeed/ChangeFeedItem";
+import { ChangeFeedItemProps } from "@ui-lib/components/ChangeFeed/ChangeFeedItem";
 
 export const sampleActivityData: ChangeFeedItemProps[] = [
     {

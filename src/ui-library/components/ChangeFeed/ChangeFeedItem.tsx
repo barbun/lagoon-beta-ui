@@ -1,5 +1,5 @@
-import { Badge } from "@/components/ui/badge";
-import Accordion from "@/components/Accordion";
+import { Badge } from "@ui-lib/components/ui/badge";
+import Accordion from "@ui-lib/components/Accordion";
 import { useMemo } from "react";
 
 export type ChangeFeedItemProps = {

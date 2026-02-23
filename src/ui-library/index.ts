@@ -1,4 +1,3 @@
-import './index.css';
 // config/providers
 export { default as Colors } from './_util/colors';
 

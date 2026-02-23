@@ -11,8 +11,7 @@ import {
 import CopyToClipboard from '../CopyToClipboard';
 import { ChevronRight } from 'lucide-react';
 
-type Component<T extends keyof JSX.IntrinsicElements | React.JSXElementConstructor<any>> = ReactElement<T>;
-type LinkComponent = Component<'a'>;
+type LinkComponent = ReactElement<React.AnchorHTMLAttributes<HTMLAnchorElement>>;
 
 const decorators = {
 	default: ['', 'project', 'environment'],
@@ -26,12 +25,12 @@ export interface BasicProps {
 				navOnClick?: MouseEventHandler<HTMLAnchorElement | HTMLSpanElement>;
 				key?: string | number;
 				copyText?: string;
-		  }
+			}
 		| {
 				title: LinkComponent;
 				key?: string | number;
 				copyText?: string;
-		  }
+			}
 	)[];
 	activeKey?: string | number;
 }

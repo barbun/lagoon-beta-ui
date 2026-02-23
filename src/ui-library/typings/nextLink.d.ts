@@ -1,5 +1,6 @@
-interface ParsedUrlQueryInput
-	extends NodeJS.Dict<string | number | boolean | readonly string[] | readonly number[] | readonly boolean[] | null> {}
+type ParsedUrlQueryInput = NodeJS.Dict<
+	string | number | boolean | readonly string[] | readonly number[] | readonly boolean[] | null
+>;
 
 interface UrlObject {
 	auth?: string | null | undefined;

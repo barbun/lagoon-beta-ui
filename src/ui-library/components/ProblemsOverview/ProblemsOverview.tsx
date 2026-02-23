@@ -15,8 +15,8 @@ type LagoonProblemsOverviewProps = {
 type Props =
 	| LagoonProblemsOverviewProps
 	| {
-			skeleton: true;
-	  };
+		skeleton: true;
+	};
 
 const LagoonProblemsOverview: React.FC<Props> = (props) => {
 	if (props.skeleton) {

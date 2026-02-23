@@ -74,7 +74,7 @@ const renderSidenavChildren = (
 	Link: NextLinkType,
 	sectionItem: SidebarItem,
 	activePaths: Set<string>,
-): JSX.Element | null => {
+): React.JSX.Element | null => {
 	if (!sectionItem.children?.length) return null;
 
 	return (

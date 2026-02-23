@@ -11,10 +11,11 @@ export const highlightTextInElement = (element: ReactNode, searchString: string,
 	}
 
 	if (React.isValidElement(element)) {
+		const props = element.props as Record<string, unknown>;
 		return React.cloneElement(
 			element,
-			{ ...element.props, key: `item-${key}` },
-			React.Children.map(element.props.children, (child, index) =>
+			{ ...props, key: `item-${key}` },
+			React.Children.map(props.children as ReactNode, (child, index) =>
 				highlightTextInElement(child, searchString, `${index}-${key}`),
 			),
 		);

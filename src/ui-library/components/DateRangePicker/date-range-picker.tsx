@@ -91,7 +91,7 @@ export const DateRangePicker: FC<DateRangePickerProps> = ({
 	showCompare = true,
 	rangeText = undefined,
 	...rest
-}): JSX.Element => {
+}): React.JSX.Element => {
 	// Determine if initialDateFrom was explicitly provided
 	const wasInitialDateFromProvided = initialDateFrom !== undefined;
 
@@ -123,8 +123,8 @@ export const DateRangePicker: FC<DateRangePickerProps> = ({
 	const [isDateRangeSelected, setIsDateRangeSelected] = useState(wasInitialDateFromProvided);
 
 	// Refs to store the values when the date picker is opened
-	const openedRangeRef = useRef<DateRange>();
-	const openedRangeCompareRef = useRef<DateRange | undefined>();
+	const openedRangeRef = useRef<DateRange | undefined>(undefined);
+	const openedRangeCompareRef = useRef<DateRange | undefined>(undefined);
 	const openedIsDateRangeSelectedRef = useRef<boolean>(false);
 	const hasAppliedChangesRef = useRef(false); // To track if "Update" was clicked
 
@@ -251,7 +251,7 @@ export const DateRangePicker: FC<DateRangePickerProps> = ({
 		preset: string;
 		label: string;
 		isSelected: boolean;
-	}): JSX.Element => (
+	}): React.JSX.Element => (
 		<Button
 			className={cn(isSelected && 'pointer-events-none')}
 			variant="ghost"

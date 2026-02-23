@@ -12,17 +12,6 @@ function ChangeFeed({ changeFeedItems = [] }: ChangeFeedProps) {
 	const [visibleCount, setVisibleCount] = useState(10);
 	const observerTarget = useRef<HTMLDivElement>(null);
 
-	if (!filteredItems || filteredItems.length === 0) {
-		return (
-			<div className="flex items-center justify-center min-h-[400px]">
-				<div className="border rounded-lg p-8 max-w-md text-center">
-					<p className="text-lg font-medium mb-2">No activity to display</p>
-					<p className="text-sm">Check back later for updates and new features.</p>
-				</div>
-			</div>
-		);
-	}
-
 	const filters = useMemo(() => {
 		const filterSet = new Set<string>(['All']);
 		changeFeedItems?.forEach(activityData => {
@@ -54,6 +43,17 @@ function ChangeFeed({ changeFeedItems = [] }: ChangeFeedProps) {
 	useEffect(() => {
 		setVisibleCount(10);
 	}, [activeFilters]);
+
+	if (!filteredItems || filteredItems.length === 0) {
+		return (
+			<div className="flex items-center justify-center min-h-[400px]">
+				<div className="border rounded-lg p-8 max-w-md text-center">
+					<p className="text-lg font-medium mb-2">No activity to display</p>
+					<p className="text-sm">Check back later for updates and new features.</p>
+				</div>
+			</div>
+		);
+	}
 
 	const filterList = () => (
 		filters.map(filter => {

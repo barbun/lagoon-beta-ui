@@ -1,5 +1,5 @@
-import { Label } from '@/components/ui/label';
-import { Textarea as ShadTextarea } from '@/components/ui/textarea';
+import { Label } from '@ui-lib/components/ui/label';
+import { Textarea as ShadTextarea } from '@ui-lib/components/ui/textarea';
 import React, { ComponentProps, forwardRef, ReactNode } from 'react';
 import { cva } from 'class-variance-authority';
 import { Loader2 } from 'lucide-react';

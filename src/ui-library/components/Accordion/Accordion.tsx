@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Accordion, AccordionItem, AccordionTrigger, AccordionContent } from '../ui/accordion';
-import { cn } from '@/lib/utils';
+import { cn } from '@ui-lib/lib/utils';
 
 type AccordionProps = React.ComponentProps<typeof Accordion> & {
 	items: {

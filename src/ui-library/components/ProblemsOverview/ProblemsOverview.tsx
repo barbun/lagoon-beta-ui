@@ -1,6 +1,6 @@
 import React from 'react';
 import { Frown, Meh, Smile, HelpCircle } from 'lucide-react';
-import { HoverCard, HoverCardContent, HoverCardTrigger } from '@/components/ui/hover-card';
+import { HoverCard, HoverCardContent, HoverCardTrigger } from '@ui-lib/components/ui/hover-card';
 
 import StatCard from '../StatCard';
 

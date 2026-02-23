@@ -2,8 +2,8 @@
 import React from 'react';
 import { useTheme } from 'next-themes';
 import LagoonIcon from '../../icons/sidebar/logo-dark.svg';
-import { useLinkComponent } from '@/providers/NextLinkProvider';
-import { useSyncTheme } from '@/hooks/useSyncTheme';
+import { useLinkComponent } from '@ui-lib/providers/NextLinkProvider';
+import { useSyncTheme } from '@ui-lib/hooks/useSyncTheme';
 
 
 export default function SidenavLogo() {

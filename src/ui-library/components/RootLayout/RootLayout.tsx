@@ -1,9 +1,9 @@
 import React, { ReactNode } from 'react';
 import { SidebarProvider } from '../ui/sidebar';
 import Sidenav from '../Sidenav';
-import ThemeProvider from '@/providers/ThemeProvider';
-import { AppInfo, SidebarItem, SidebarSection, UserInfo } from '@/components/Sidenav/Sidenav';
-import { AnnouncementCardProps } from '@/components/AnnouncementCard/AnnouncementCard';
+import ThemeProvider from '@ui-lib/providers/ThemeProvider';
+import { AppInfo, SidebarItem, SidebarSection, UserInfo } from '@ui-lib/components/Sidenav/Sidenav';
+import { AnnouncementCardProps } from '@ui-lib/components/AnnouncementCard/AnnouncementCard';
 
 export type EnvNavFn = (projectSlug: string, environmentSlug: string) => Promise<SidebarItem[]>;
 

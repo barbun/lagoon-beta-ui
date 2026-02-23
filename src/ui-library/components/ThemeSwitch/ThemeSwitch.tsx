@@ -1,6 +1,6 @@
 import { useTheme } from 'next-themes';
 import React from 'react';
-import { useSyncTheme } from '@/hooks/useSyncTheme';
+import { useSyncTheme } from '@ui-lib/hooks/useSyncTheme';
 import { Moon, Sun } from 'lucide-react';
 
 export default function ThemeSwitch() {

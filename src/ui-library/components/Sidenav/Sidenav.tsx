@@ -13,22 +13,22 @@ import {
 } from '../ui/sidebar';
 
 import SidenavFooterMenu from './SidenavFooterMenu';
-import { genAvatarBackground } from '@/_util/helpers';
+import { genAvatarBackground } from '@ui-lib/_util/helpers';
 
 import { Avatar, AvatarImage } from '../ui/avatar';
 import { AvatarFallback } from '@radix-ui/react-avatar';
 import AvatarBubble from '../AvatarBubble/AvatarBubble';
-import { useLinkComponent } from '@/providers/NextLinkProvider';
-import { NextLinkType } from '@/typings/nextLink';
+import { useLinkComponent } from '@ui-lib/providers/NextLinkProvider';
+import { NextLinkType } from '@ui-lib/typings/nextLink';
 import { Collapsible, CollapsibleContent, CollapsibleTrigger } from '../ui/collapsible';
 
 import { ChevronUp, Menu, X } from 'lucide-react';
 import { Button } from '../ui/button';
-import { cn } from '@/lib/utils';
+import { cn } from '@ui-lib/lib/utils';
 import useActivePaths from './useActivePaths';
-import SidenavLogo from '@/components/Sidenav/SidenavLogo';
-import AnnouncementCard from '@/components/AnnouncementCard';
-import { AnnouncementCardProps } from '@/components/AnnouncementCard/AnnouncementCard';
+import SidenavLogo from '@ui-lib/components/Sidenav/SidenavLogo';
+import AnnouncementCard from '@ui-lib/components/AnnouncementCard';
+import { AnnouncementCardProps } from '@ui-lib/components/AnnouncementCard/AnnouncementCard';
 
 type SidebarProps = React.ComponentProps<typeof Sidebar>;
 

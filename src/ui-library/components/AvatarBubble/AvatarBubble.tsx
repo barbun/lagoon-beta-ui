@@ -1,6 +1,6 @@
 import { cva } from 'class-variance-authority';
 import { HTMLAttributes } from 'react';
-import { cn } from '@/lib/utils';
+import { cn } from '@ui-lib/lib/utils';
 
 const avatarBubble = cva('rounded-full h-6 w-6 min-w-[24px] flex justify-center items-center mr-2 text-xs');
 

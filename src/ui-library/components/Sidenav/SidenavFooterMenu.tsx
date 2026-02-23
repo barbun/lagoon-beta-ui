@@ -3,7 +3,7 @@ import React, { ReactNode } from 'react';
 import { ChevronsUpDown, LifeBuoy, LogOut, ScrollText, UserRoundCog } from 'lucide-react';
 import { DropdownMenu, DropdownMenuTrigger, DropdownMenuContent, DropdownMenuItem } from '../ui/dropdown-menu';
 import { SidebarMenuButton } from '../ui/sidebar';
-import { useLinkComponent } from '@/providers/NextLinkProvider';
+import { useLinkComponent } from '@ui-lib/providers/NextLinkProvider';
 import { AppInfo } from './Sidenav';
 
 type DropdownProps = AppInfo & { signOutFn: () => Promise<void>; avatar: ReactNode, userDisplayName: ReactNode, email: string, documentationUrl?: string; disableAccountLink?: boolean, disableChangeFeedLink?: boolean };

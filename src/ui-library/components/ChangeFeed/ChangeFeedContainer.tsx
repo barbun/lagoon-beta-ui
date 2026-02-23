@@ -3,7 +3,7 @@
 import { useEffect, useState } from 'react';
 import ChangeFeed from './ChangeFeed';
 import { ChangeFeedItemProps } from './ChangeFeedItem';
-import { ChangeFeedDataSchema } from '@/schemas/changeFeed';
+import { ChangeFeedDataSchema } from '@ui-lib/schemas/changeFeed';
 
 export type ChangeFeedContainerProps = {
     sourceData?: string;

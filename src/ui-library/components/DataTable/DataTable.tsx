@@ -1,6 +1,6 @@
 'use client';
 import React, { ReactNode, useEffect, useMemo, useRef } from 'react';
-import { Button } from '@/components/ui/button';
+import { Button } from '@ui-lib/components/ui/button';
 import {
 	ColumnDef,
 	flexRender,
@@ -21,7 +21,7 @@ import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from '.
 import { DebouncedInput } from '../Input';
 
 import { highlightTextInElement } from './HighlightText';
-import { cn } from '@/lib/utils';
+import { cn } from '@ui-lib/lib/utils';
 import { Skeleton } from '../ui/skeleton';
 import SelectWithOptions from '../Select';
 

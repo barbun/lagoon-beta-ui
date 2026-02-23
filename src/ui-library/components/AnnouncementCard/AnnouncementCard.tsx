@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import { Card, CardContent, CardHeader } from '@/components/ui/card';
+import { Card, CardContent, CardHeader } from '@ui-lib/components/ui/card';
 import { BotMessageSquare, X } from 'lucide-react';
-import { cn } from '@/lib/utils';
-import { getLocalStorage, setLocalStorage } from '@/_util/helpers';
+import { cn } from '@ui-lib/lib/utils';
+import { getLocalStorage, setLocalStorage } from '@ui-lib/_util/helpers';
 
 export type AnnouncementCardProps = {
 	title?: string;

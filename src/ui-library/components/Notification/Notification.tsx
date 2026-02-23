@@ -8,7 +8,7 @@ import {
 	AlertDialogHeader,
 	AlertDialogTitle,
 	AlertDialogTrigger,
-} from '@/components/ui/alert-dialog';
+} from '@ui-lib/components/ui/alert-dialog';
 import { ReactNode } from 'react';
 
 type NotificationProps = {

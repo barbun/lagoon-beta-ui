@@ -7,7 +7,7 @@ import {
 	BreadcrumbList,
 	BreadcrumbLink,
 	BreadcrumbSeparator,
-} from '@/components/ui/breadcrumb';
+} from '@ui-lib/components/ui/breadcrumb';
 import CopyToClipboard from '../CopyToClipboard';
 import { ChevronRight } from 'lucide-react';
 

@@ -9,7 +9,7 @@ import {
 	TableHead,
 	TableHeader,
 	TableRow,
-} from '@/components/ui/table';
+} from '@ui-lib/components/ui/table';
 
 type RenderFn = (renderItem: string) => ReactNode;
 

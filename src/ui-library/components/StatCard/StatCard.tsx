@@ -1,7 +1,7 @@
 import React, { ReactNode } from 'react';
 import { Card, CardHeader, CardTitle, CardContent } from '../ui/card';
 import { cva } from 'class-variance-authority';
-import { cn } from '@/lib/utils';
+import { cn } from '@ui-lib/lib/utils';
 
 type StatCardprops = { title: string; content: ReactNode; type?: 'default' | 'withIcon' | 'stat' };
 

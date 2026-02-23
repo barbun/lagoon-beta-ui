@@ -9,7 +9,7 @@ import { DateInput } from './date-input';
 import { Label } from '../ui/label';
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '../ui/select';
 import { Switch } from '../ui/switch';
-import { cn } from '@/lib/utils';
+import { cn } from '@ui-lib/lib/utils';
 import { Check, ChevronDown, ChevronUp } from 'lucide-react';
 import type { JSX } from 'react/jsx-runtime'; // Import JSX to fix the undeclared variable error
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 import addGroupMember from '@/lib/mutation/organizations/addGroupMember';
 import { useMutation } from '@apollo/client';
-import { Sheet } from '@uselagoon/ui-library';
+import { Sheet } from '@/ui-library';
 import { UserRoundPlus } from 'lucide-react';
 import { toast } from 'sonner';
 

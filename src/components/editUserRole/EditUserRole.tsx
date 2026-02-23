@@ -2,7 +2,7 @@ import { FC, startTransition } from 'react';
 
 import addGroupMember from '@/lib/mutation/organizations/addGroupMember';
 import { ApolloError, useMutation } from '@apollo/client';
-import { Sheet, Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Sheet, Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 import { Edit2Icon } from 'lucide-react';
 import { toast } from 'sonner';
 

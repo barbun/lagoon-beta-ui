@@ -10,7 +10,7 @@ import deleteEnvironment from '@/lib/mutation/deleteEnvironment';
 import switchActiveStandby from '@/lib/mutation/switchActiveStandby';
 import environmentByOpenShiftProjectNameWithFacts from '@/lib/query/environmentWIthInsightsAndFacts';
 import { QueryRef, useMutation, useQuery, useQueryRefHandlers, useReadQuery } from '@apollo/client';
-import {Badge, DetailStat} from '@uselagoon/ui-library';
+import {Badge, DetailStat} from '@/ui-library';
 import dayjs from 'dayjs';
 import utc from 'dayjs/plugin/utc';
 import gitUrlParse from 'git-url-parse';

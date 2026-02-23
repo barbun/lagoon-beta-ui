@@ -6,7 +6,7 @@ import SectionWrapper from '@/components/SectionWrapper/SectionWrapper';
 import DeployLatest from '@/components/pages/deployments/_components/DeployLatest';
 import getDeploymentTableColumns from '@/components/pages/deployments/_components/TableColumns';
 import { deploymentResultOptions, statusOptions } from '@/components/pages/deployments/_components/filterValues';
-import { DataTable, DateRangePicker, SelectWithOptions } from '@uselagoon/ui-library';
+import { DataTable, DateRangePicker, SelectWithOptions } from '@/ui-library';
 import { useQueryStates } from 'nuqs';
 
 export default function Loading() {

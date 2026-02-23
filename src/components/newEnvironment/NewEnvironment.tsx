@@ -5,7 +5,7 @@ import { useEnvContext } from 'next-runtime-env';
 import deployEnvironmentBranch from '@/lib/mutation/deployEnvironmentBranch';
 import projectByNameWithDeployKeyQuery from '@/lib/query/projectByNameWithDeployKeyQuery';
 import { ApolloError, useMutation, useQuery } from '@apollo/client';
-import { Accordion, CopyToClipboard, Input, Sheet } from '@uselagoon/ui-library';
+import { Accordion, CopyToClipboard, Input, Sheet } from '@/ui-library';
 import { toast } from 'sonner';
 
 type Props = {

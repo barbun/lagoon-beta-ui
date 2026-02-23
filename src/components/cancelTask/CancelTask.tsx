@@ -1,7 +1,7 @@
 import { Task } from '@/app/(routegroups)/(projectroutes)/projects/[projectSlug]/[environmentSlug]/tasks/(tasks-page)/page';
 import cancelTask from '@/lib/mutation/cancelTask';
 import { useMutation } from '@apollo/client';
-import { Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 import { Ban } from 'lucide-react';
 import { toast } from 'sonner';
 

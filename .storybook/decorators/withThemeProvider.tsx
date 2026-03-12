@@ -15,6 +15,12 @@ const ThemeSynchronizer = ({ theme }: { theme: string }) => {
 
 const withThemeProvider: Decorator = (Story, context: StoryContext) => {
   const theme = context.globals?.theme || 'dark';
+  
+  const disableGlobalTheme = context.parameters?.disableGlobalTheme;
+  
+  if (disableGlobalTheme) {
+    return <Story />;
+  }
 
   return (
     <ThemeProvider

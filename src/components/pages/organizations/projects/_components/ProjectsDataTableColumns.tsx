@@ -4,7 +4,7 @@ import Link from 'next/link';
 
 import { OrgProject } from '@/app/(routegroups)/(orgroutes)/organizations/[organizationSlug]/(organization-overview)/page';
 import { handleSort, renderSortIcons } from '@/components/utils';
-import { Button, DataTableColumnDef, Tooltip, TooltipContent, TooltipTrigger, cn } from '@uselagoon/ui-library';
+import { Button, DataTableColumnDef, Tooltip, TooltipContent, TooltipTrigger, cn } from '@/ui-library';
 import { FolderCog } from 'lucide-react';
 
 export const ProjectsDataTableColumns = (

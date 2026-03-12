@@ -2,7 +2,7 @@ import { FC } from 'react';
 
 import updateOrganizationDescription from '@/lib/mutation/organizations/updateOrganizationDescription';
 import { ApolloError, useMutation } from '@apollo/client';
-import { Button, Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Button, Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 import { Check, Loader2 } from 'lucide-react';
 import { toast } from 'sonner';
 

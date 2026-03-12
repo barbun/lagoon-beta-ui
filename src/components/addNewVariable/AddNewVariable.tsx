@@ -2,7 +2,7 @@ import {FC, ReactNode, startTransition} from 'react';
 
 import addOrUpdateEnvVariable from '@/lib/mutation/addOrUpdateEnvVariable';
 import { useMutation } from '@apollo/client';
-import { Sheet } from '@uselagoon/ui-library';
+import { Sheet } from '@/ui-library';
 import { toast } from 'sonner';
 
 type Props = { onClick?: () => any; refetch: () => void; additionalContent?: ReactNode } & (

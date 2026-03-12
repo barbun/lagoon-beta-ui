@@ -15,7 +15,7 @@ import './globals.css';
 import fs from 'fs';
 import {OverrideProvider} from "@/contexts/OverrideContext";
 import * as process from "node:process";
-import { validateOverrides, type Overrides } from '@uselagoon/ui-library/schemas';
+import { validateOverrides, type Overrides } from '@/ui-library/schemas';
 
 function loadOverrides() : Overrides {
   try {

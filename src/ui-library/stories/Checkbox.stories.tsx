@@ -7,7 +7,7 @@ import { Story } from '@storybook/addon-docs/blocks';
 
 const meta: Meta<typeof Checkbox> = {
 	component: Checkbox,
-	title: 'Components/Checkbox',
+	title: 'ui-library/Checkbox',
 	tags: ['autodocs'],
 	parameters: {
 		design: {

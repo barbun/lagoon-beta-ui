@@ -17,7 +17,7 @@ const MockLink = forwardRef<HTMLAnchorElement, React.AnchorHTMLAttributes<HTMLAn
 
 const meta: Meta<typeof Sidenav> = {
 	component: Sidenav,
-	title: 'Components/Sidenav',
+	title: 'ui-library/Sidenav',
 	tags: ['autodocs'],
 	parameters: {
 		docs: {

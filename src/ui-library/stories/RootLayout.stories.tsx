@@ -16,7 +16,7 @@ const MockLink = forwardRef<HTMLAnchorElement, React.AnchorHTMLAttributes<HTMLAn
 
 const meta = {
 	component: RootLayout,
-	title: 'Components/RootLayout',
+	title: 'ui-library/RootLayout',
 	tags: ['autodocs'],
 	parameters: {
 		docs: {

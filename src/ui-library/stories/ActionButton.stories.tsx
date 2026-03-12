@@ -7,7 +7,7 @@ import {useState} from "react";
 
 const meta: Meta<typeof ActionButton> = {
 	component: ActionButton,
-	title: 'Components/ActionButton',
+	title: 'ui-library/ActionButton',
 	tags: ['autodocs'],
 };
 

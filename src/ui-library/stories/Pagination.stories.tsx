@@ -4,7 +4,7 @@ import { default as Pagination } from '../components/Pagination';
 
 const meta: Meta<typeof Pagination> = {
 	component: Pagination,
-	title: 'Components/Pagination',
+	title: 'ui-library/Pagination',
 	tags: ['autodocs'],
 };
 

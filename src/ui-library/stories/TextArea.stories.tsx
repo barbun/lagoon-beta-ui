@@ -8,7 +8,7 @@ import { Controls, Primary, Stories, Story, Title } from '@storybook/addon-docs/
 
 const meta: Meta<typeof Textarea> = {
 	component: Textarea,
-	title: 'Components/Textarea',
+	title: 'ui-library/Textarea',
 	tags: ['autodocs'],
 	argTypes: {
 		name: { control: 'text' },

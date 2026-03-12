@@ -7,7 +7,7 @@ import { Controls, Primary, Stories, Story, Title } from '@storybook/addon-docs/
 
 const meta: Meta<typeof Select> = {
 	component: Select,
-	title: 'Components/Select',
+	title: 'ui-library/Select',
 	tags: ['autodocs'],
 	parameters: {
 		docs: {

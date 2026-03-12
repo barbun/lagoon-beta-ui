@@ -5,7 +5,7 @@ import AnnouncementCard from '../components/AnnouncementCard';
 
 const meta: Meta<typeof AnnouncementCard> = {
 	component: AnnouncementCard,
-	title: 'Components/AnnouncementCard',
+	title: 'ui-library/AnnouncementCard',
 	tags: ['autodocs'],
 	parameters: {
 		docs: {

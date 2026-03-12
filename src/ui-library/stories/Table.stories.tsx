@@ -5,7 +5,7 @@ import { default as Table } from '../components/Table';
 
 const meta: Meta<typeof Table> = {
 	component: Table,
-	title: 'Components/Table',
+	title: 'ui-library/Table',
 	tags: ['autodocs'],
 };
 

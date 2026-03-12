@@ -7,7 +7,7 @@ import { Controls, Primary, Stories, Story, Title } from '@storybook/addon-docs/
 
 const meta: Meta<typeof LagoonProblemsOverview> = {
 	component: LagoonProblemsOverview,
-	title: 'Lagoon specific/LagoonProblemsOverview',
+	title: 'ui-library/ProblemsOverview',
 	tags: ['autodocs'],
 	parameters: {
 		docs: {

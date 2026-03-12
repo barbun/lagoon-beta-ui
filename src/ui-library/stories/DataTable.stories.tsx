@@ -19,7 +19,7 @@ import SelectWithOptions from '../components/Select';
 
 const meta: Meta<typeof DataTable> = {
 	component: DataTable,
-	title: 'Components/DataTable',
+	title: 'ui-library/DataTable',
 	tags: ['autodocs'],
 };
 

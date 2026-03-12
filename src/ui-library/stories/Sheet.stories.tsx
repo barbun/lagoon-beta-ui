@@ -5,7 +5,7 @@ import Accordion from '../components/Accordion';
 
 const meta: Meta<typeof Sheet> = {
 	component: Sheet,
-	title: 'Components/Sheet',
+	title: 'ui-library/Sheet',
 	tags: ['autodocs'],
 };
 

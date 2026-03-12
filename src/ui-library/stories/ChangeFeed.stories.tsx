@@ -4,7 +4,7 @@ import { sampleActivityData } from '../components/ChangeFeed/sampleData';
 
 const meta: Meta<typeof ChangeFeedContainer> = {
     component: ChangeFeedContainer,
-    title: 'Components/ChangeFeed',
+    title: 'ui-library/ChangeFeed',
     tags: ['autodocs'],
 };
 

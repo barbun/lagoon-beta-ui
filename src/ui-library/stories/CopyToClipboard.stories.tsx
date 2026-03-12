@@ -7,7 +7,7 @@ import { Controls, Primary, Stories, Story, Title } from '@storybook/addon-docs/
 
 const meta: Meta<typeof CopyToClipboard> = {
 	component: CopyToClipboard,
-	title: 'Components/CopyToClipboard',
+	title: 'ui-library/CopyToClipboard',
 	tags: ['autodocs'],
 	parameters: {
 		docs: {

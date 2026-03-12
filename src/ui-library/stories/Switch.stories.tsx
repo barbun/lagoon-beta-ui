@@ -5,7 +5,7 @@ import { default as Switch } from '../components/Switch';
 
 const meta: Meta<typeof Switch> = {
 	component: Switch,
-	title: 'Components/Switch',
+	title: 'ui-library/Switch',
 	tags: ['autodocs'],
 };
 

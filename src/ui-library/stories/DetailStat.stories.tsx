@@ -7,7 +7,7 @@ import { Controls, Primary, Stories, Story, Title } from '@storybook/addon-docs/
 
 const meta: Meta<typeof DetailStat> = {
 	component: DetailStat,
-	title: 'Components/DetailStat',
+	title: 'ui-library/DetailStat',
 	tags: ['autodocs'],
 	parameters: {
 		docs: {

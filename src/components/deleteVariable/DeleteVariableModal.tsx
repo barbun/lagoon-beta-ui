@@ -3,7 +3,7 @@ import {FC, ReactNode, startTransition, useState} from 'react';
 import { EnvVariable } from '@/app/(routegroups)/(projectroutes)/projects/[projectSlug]/project-variables/page';
 import deleteEnvVariableByName from '@/lib/mutation/deleteEnvVariableByName';
 import { useMutation } from '@apollo/client';
-import { Button, Input, Label, Notification, Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Button, Input, Label, Notification, Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 import {Trash2, Loader2} from 'lucide-react';
 import { toast } from 'sonner';
 

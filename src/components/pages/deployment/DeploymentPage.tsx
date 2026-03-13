@@ -11,7 +11,7 @@ import CancelDeployment from '@/components/cancelDeployment/CancelDeployment';
 import DeploymentNotFound from '@/components/errors/DeploymentNotFound';
 import LogViewer from '@/components/logViewer/LogViewer';
 import { QueryRef, useQueryRefHandlers, useReadQuery } from '@apollo/client';
-import { Badge, BasicTable, Button, Switch, Table } from '@uselagoon/ui-library';
+import { Badge, BasicTable, Button, Switch, Table } from '@/ui-library';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import utc from 'dayjs/plugin/utc';

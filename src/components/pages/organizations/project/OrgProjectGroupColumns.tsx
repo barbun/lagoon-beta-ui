@@ -2,7 +2,7 @@ import Link from 'next/link';
 
 import { OrgGroup } from '@/app/(routegroups)/(orgroutes)/organizations/[organizationSlug]/(organization-overview)/page';
 import { renderSortIcons } from '@/components/utils';
-import { Badge, Button, DataTableColumnDef, Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Badge, Button, DataTableColumnDef, Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 
 import { handleSort } from '../DataTableColumns';
 

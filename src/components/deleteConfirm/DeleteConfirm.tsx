@@ -1,6 +1,6 @@
 import React, { FC, ReactNode, startTransition, useState } from 'react';
 
-import { Button, Input, Label, Notification, Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Button, Input, Label, Notification, Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 import { Trash } from 'lucide-react';
 import { toast } from 'sonner';
 

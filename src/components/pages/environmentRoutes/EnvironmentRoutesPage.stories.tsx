@@ -82,7 +82,7 @@ const meta: Meta<typeof EnvironmentRoutesPage> = {
       query={environmentWithRoutes}
       variables={{ openshiftProjectName: 'project-main' }}
     >
-      {queryRef => <EnvironmentRoutesPage queryRef={queryRef} projectName="test-project" />}
+      {queryRef => <EnvironmentRoutesPage queryRef={queryRef} projectName="test-project" environmentName="main" />}
     </MockPreloadQuery>
   ),
 };

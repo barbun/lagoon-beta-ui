@@ -25,13 +25,5 @@ const config: StorybookConfig = {
     reactDocgen: 'react-docgen-typescript',
   },
 
-  refs: {
-    'ui-library': {
-      title: 'ui-library',
-      url: 'https://main--69698d15d02f1ad6e82d516e.chromatic.com',
-      expanded: false,
-    },
-  },
-
 };
 export default config;

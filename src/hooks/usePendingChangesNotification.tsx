@@ -77,14 +77,16 @@ export const usePendingChangesNotification = (options: UsePendingChangesNotifica
       // Dismiss toast if no pending changes
       toast.dismiss(toastId);
     }
+  }, [environment?.pendingChanges, environment?.project?.name, environmentSlug, deploymentUrl, router, pathname]);
 
+  useEffect(() => {
+    const toastId = `pending-changes-${pathname}`;
     return () => {
-      // Handles the toast clean-up for strict mode in dev
       if (process.env.NODE_ENV === 'development' && isFirstRender.current) {
         isFirstRender.current = false;
         return;
       }
       toast.dismiss(toastId);
     };
-  }, [environment?.pendingChanges, environment?.project?.name, environmentSlug, deploymentUrl, router, pathname]);
+  }, [pathname]);
 };

@@ -12,7 +12,7 @@ import { usePendingChangesNotification } from '@/hooks/usePendingChangesNotifica
 import environmentByProjectNameWithEnvVarsValueQuery from '@/lib/query/environmentByProjectNameWithEnvVarsValueQuery';
 import environmentProjectByProjectNameWithEnvVarsValueQuery from '@/lib/query/environmentProjectByProjectNameWithEnvVarsValueQuery';
 import { QueryRef, useLazyQuery, useQueryRefHandlers, useReadQuery } from '@apollo/client';
-import { DataTable, SelectWithOptions, Switch } from '@uselagoon/ui-library';
+import { DataTable, SelectWithOptions, Switch } from '@/ui-library';
 import { useQueryStates } from 'nuqs';
 import { toast } from 'sonner';
 

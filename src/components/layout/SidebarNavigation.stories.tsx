@@ -5,7 +5,7 @@ import type { Meta, StoryObj } from '@storybook/react';
 
 import { getOrgNav, getProjectNav } from '@/components/dynamicNavigation/DynamicNavigation';
 import { SidebarSection } from '@/contexts/AppContext';
-import { NextLinkProvider, RootLayout } from '@uselagoon/ui-library';
+import { NextLinkProvider, RootLayout } from '@/ui-library';
 import { BriefcaseBusiness, FolderGit2, KeyRound, ListChecks, ServerCog } from 'lucide-react';
 
 const onNavigate = action('navigate');

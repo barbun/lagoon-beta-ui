@@ -37,6 +37,7 @@ function SheetContent({
 	className,
 	children,
 	side = 'right',
+	onPointerDownOutside,
 	...props
 }: React.ComponentProps<typeof SheetPrimitive.Content> & {
 	side?: 'top' | 'right' | 'bottom' | 'left';
@@ -58,6 +59,14 @@ function SheetContent({
 						'data-[state=closed]:slide-out-to-bottom data-[state=open]:slide-in-from-bottom inset-x-0 bottom-0 h-auto border-t',
 					className,
 				)}
+				onPointerDownOutside={(e) => {
+					const target = e.target as HTMLElement;
+					if (target.closest('[data-sonner-toast]') || target.closest('[data-sonner-toaster]')) {
+						e.preventDefault();
+						return;
+					}
+					onPointerDownOutside?.(e);
+				}}
 				{...props}
 			>
 				{children}

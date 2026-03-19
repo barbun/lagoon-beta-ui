@@ -7,31 +7,38 @@ import { useSyncTheme } from '@ui-lib/hooks/useSyncTheme';
 
 
 export default function SidenavLogo() {
-	const { theme } = useTheme();
+	const { resolvedTheme } = useTheme();
 
 	useSyncTheme();
 
 	const Link = useLinkComponent();
 
-	const getLogos = () => {
+	const getLogos= () => {
 		const iconFolder = '/sidebar-icons';
-		return `${iconFolder}/logo-${theme}.svg`;
+		// We need to fallback to the dark logo if resolvedTheme is undefined for some reason
+		return `${iconFolder}/logo-${resolvedTheme ?? 'dark'}.svg`;
 	};
+
+	const FALLBACK_LOGO = '/sidebar-icons/logo-dark.svg';
 
 	const renderLogo = () => {
 		const logoPath = getLogos();
+		// The LagoonIcon svg can be either a string or a React component depending on the Next/image config, so we need to handle both cases.
+		const fallbackPath = typeof LagoonIcon === 'string' ? LagoonIcon : FALLBACK_LOGO;
 
-			return (
-				<img
-					src={!logoPath.includes('undefined') ? logoPath : LagoonIcon}
-					alt="Logo"
-					onError={(e) => {
-						// Sets the lagoon logo as a fallback if no sidebar-icons defined
-						const targetLogo = e.currentTarget;
-						targetLogo.src = LagoonIcon;
-					}}
-				/>
-			);
+		return (
+			<img
+				src={logoPath}
+				alt="Logo"
+				onError={(e) => {
+					const target = e.currentTarget;
+					// Basic gaurd against  the infinite loop if the fallback svg fails (shouldn't with the above logic, but just in case)
+					if (target.src !== fallbackPath) {
+						target.src = fallbackPath;
+					}
+				}}
+			/>
+		);
 	};
 
 	return (

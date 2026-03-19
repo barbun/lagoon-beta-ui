@@ -55,12 +55,13 @@ export const metadata: Metadata = {
 
 export const dynamic = 'force-dynamic';
 
+const overrides = loadOverrides();
+
 export default async function RootLayout({
   children,
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  const overrides = loadOverrides();
   // ref for exposing custom variables at runtime: https://github.com/expatfile/next-runtime-env/blob/development/docs/EXPOSING_CUSTOM_ENV.md
   noStore();
   return (

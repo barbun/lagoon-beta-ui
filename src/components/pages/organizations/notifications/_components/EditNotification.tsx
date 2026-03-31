@@ -8,7 +8,7 @@ import {
   UPDATE_NOTIFICATION_WEBHOOK,
 } from '@/lib/mutation/organizations/updateNotification';
 import { ApolloError, DocumentNode, useMutation } from '@apollo/client';
-import { Sheet, Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Sheet, Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 import { Edit2Icon } from 'lucide-react';
 import { toast } from 'sonner';
 

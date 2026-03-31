@@ -3,7 +3,7 @@
 import { ProjectDetailsData } from '@/app/(routegroups)/(projectroutes)/projects/[projectSlug]/project-details/page';
 import SectionWrapper from '@/components/SectionWrapper/SectionWrapper';
 import dayjs from '@/lib/dayjs';
-import { CopyToClipboard, DetailStat } from '@uselagoon/ui-library';
+import { CopyToClipboard, DetailStat } from '@/ui-library';
 import giturlparse from 'git-url-parse';
 
 interface ProjectDetailsProps {

@@ -1,7 +1,7 @@
 import React from 'react';
 
 import { Decorator, StoryContext } from '@storybook/react';
-import { Toaster } from '@uselagoon/ui-library';
+import { Toaster } from '@/ui-library/index';
 
 export const withToaster: Decorator = (Story, context: StoryContext) => {
   const theme = context.globals?.theme || 'dark';

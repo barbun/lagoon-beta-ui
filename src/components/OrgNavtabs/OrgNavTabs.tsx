@@ -6,7 +6,7 @@ import { useEnvContext } from 'next-runtime-env';
 import Link from 'next/link';
 import { useParams, usePathname } from 'next/navigation';
 
-import { TabNavigation } from '@uselagoon/ui-library';
+import { TabNavigation } from '@/ui-library';
 
 import { LinkContentWrapper } from '../shared/styles';
 

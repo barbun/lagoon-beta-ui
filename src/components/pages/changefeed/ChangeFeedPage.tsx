@@ -1,7 +1,7 @@
 'use client';
 
 import { useOverrides } from "@/contexts/OverrideContext";
-import { ChangeFeedContainer } from "@uselagoon/ui-library";
+import { ChangeFeedContainer } from "@/ui-library";
 
 
 export default function ChangeFeedPage() {

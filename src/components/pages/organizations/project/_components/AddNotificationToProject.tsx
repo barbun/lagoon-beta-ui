@@ -6,7 +6,7 @@ import {
 } from '@/app/(routegroups)/(orgroutes)/organizations/[organizationSlug]/(organization-overview)/page';
 import addNotificationToproject from '@/lib/mutation/organizations/addNotificationToproject';
 import { ApolloError, useMutation } from '@apollo/client';
-import { Sheet } from '@uselagoon/ui-library';
+import { Sheet } from '@/ui-library';
 import { toast } from 'sonner';
 
 type BasicNotification = {

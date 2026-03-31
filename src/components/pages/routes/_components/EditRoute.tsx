@@ -1,6 +1,6 @@
 import { FC } from 'react';
 import { useMutation } from '@apollo/client';
-import { Sheet, Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Sheet, Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 import { Edit2Icon } from 'lucide-react';
 import { toast } from 'sonner';
 import addOrUpdateRouteOnEnvironment from '@/lib/mutation/addOrUpdateRouteOnEnvironment';

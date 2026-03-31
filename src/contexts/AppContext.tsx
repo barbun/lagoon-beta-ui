@@ -7,7 +7,7 @@ import { useEnvContext } from 'next-runtime-env';
 import { useParams, usePathname } from 'next/navigation';
 
 import { useSidenavItems } from '@/components/dynamicNavigation/useSidenavItems';
-import { RootLayout, ThemeSwitch, Toaster } from '@uselagoon/ui-library';
+import { RootLayout, ThemeSwitch, Toaster } from '@/ui-library';
 import manualSignOut from 'utils/manualSignOut';
 import { useOverrides } from "@/contexts/OverrideContext";
 

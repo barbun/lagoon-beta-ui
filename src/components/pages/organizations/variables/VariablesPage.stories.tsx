@@ -50,7 +50,7 @@ export const AddVariable: Story = {
   play: async ({ canvasElement }) => {
     const canvas = within(canvasElement);
 
-    const addButton = await canvas.findByRole('button', { name: 'Add new variable' }, { timeout: 10000 });
+    const addButton = await canvas.findByRole('button', { name: 'Add organization variable' }, { timeout: 10000 });
     await userEvent.click(addButton);
 
     const nameInput = await screen.findByLabelText(/variable name/i);

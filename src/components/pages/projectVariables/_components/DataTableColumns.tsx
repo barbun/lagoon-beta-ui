@@ -2,7 +2,7 @@
 
 import { EnvVariable } from '@/app/(routegroups)/(projectroutes)/projects/[projectSlug]/project-variables/page';
 import { DeleteVariableDialog } from '@/components/deleteVariable/DeleteVariableModal';
-import { CopyToClipboard, DataTableColumnDef } from '@uselagoon/ui-library';
+import { CopyToClipboard, DataTableColumnDef } from '@/ui-library';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import utc from 'dayjs/plugin/utc';

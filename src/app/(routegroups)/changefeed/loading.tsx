@@ -1,6 +1,6 @@
 'use client';
 
-import { ChangeFeedContainer } from "@uselagoon/ui-library";
+import { ChangeFeedContainer } from "@/ui-library";
 
 export default function LoadingPage() {
     return (

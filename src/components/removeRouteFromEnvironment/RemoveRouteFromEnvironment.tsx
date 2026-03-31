@@ -2,7 +2,7 @@ import { FC, startTransition, useState } from 'react';
 
 
 import { useMutation } from '@apollo/client';
-import { Button, Input, Label, Notification, Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Button, Input, Label, Notification, Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 import { Trash2, Unlink } from 'lucide-react';
 import { toast } from 'sonner';
 

@@ -4,7 +4,7 @@ import SectionWrapper from '@/components/SectionWrapper/SectionWrapper';
 import { CreateProject } from '@/components/createProject/CreateProject';
 import { resultsFilterValues } from '@/components/pages/organizations/groups/_components/groupFilterValues';
 import { ProjectsDataTableColumns } from '@/components/pages/organizations/projects/_components/ProjectsDataTableColumns';
-import { DataTable, SelectWithOptions } from '@uselagoon/ui-library';
+import { DataTable, SelectWithOptions } from '@/ui-library';
 
 import { OrgProject } from '../../(organization-overview)/page';
 

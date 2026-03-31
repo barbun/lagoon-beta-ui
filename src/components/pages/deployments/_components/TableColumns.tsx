@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { Deployment } from '@/app/(routegroups)/(projectroutes)/projects/[projectSlug]/[environmentSlug]/deployments/(deployments-page)/page';
 import CancelDeployment from '@/components/cancelDeployment/CancelDeployment';
 import { capitalize } from '@/components/utils';
-import { Badge, DataTableColumnDef, Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Badge, DataTableColumnDef, Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 import dayjs from 'dayjs';
 import duration from 'dayjs/plugin/duration';
 import isBetween from 'dayjs/plugin/isBetween';

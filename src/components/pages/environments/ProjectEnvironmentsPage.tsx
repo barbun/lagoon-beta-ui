@@ -8,7 +8,7 @@ import ProjectNotFound from '@/components/errors/ProjectNotFound';
 import { NewEnvironment } from '@/components/newEnvironment/NewEnvironment';
 import { makeSafe } from '@/components/utils';
 import { QueryRef, useQueryRefHandlers, useReadQuery } from '@apollo/client';
-import { DataTable, SelectWithOptions } from '@uselagoon/ui-library';
+import { DataTable, SelectWithOptions } from '@/ui-library';
 import { useQueryStates } from 'nuqs';
 
 import { createLinks } from '../environment/EnvironmentPage';

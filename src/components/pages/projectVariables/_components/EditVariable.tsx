@@ -3,7 +3,7 @@ import {FC, ReactNode, startTransition} from 'react';
 import { EnvVariable } from '@/app/(routegroups)/(projectroutes)/projects/[projectSlug]/project-variables/page';
 import addOrUpdateEnvVariable from '@/lib/mutation/addOrUpdateEnvVariable';
 import { useMutation } from '@apollo/client';
-import { Sheet, Tooltip, TooltipContent, TooltipTrigger } from '@uselagoon/ui-library';
+import { Sheet, Tooltip, TooltipContent, TooltipTrigger } from '@/ui-library';
 import { Edit2Icon } from 'lucide-react';
 import { toast } from 'sonner';
 

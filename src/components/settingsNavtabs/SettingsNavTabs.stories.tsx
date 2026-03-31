@@ -3,7 +3,7 @@ import React, { forwardRef } from 'react';
 import { action } from '@storybook/addon-actions';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { NextLinkProvider, TabNavigation } from '@uselagoon/ui-library';
+import { NextLinkProvider, TabNavigation } from '@/ui-library';
 
 const onNavigate = action('navigate');
 

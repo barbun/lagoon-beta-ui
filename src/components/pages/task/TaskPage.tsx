@@ -8,7 +8,7 @@ import TaskNotFound from '@/components/errors/TaskNotFound';
 import { getTaskDuration } from '@/components/utils';
 import getTaskFilesDownload from '@/lib/query/getTaskFileDownload';
 import { QueryRef, useLazyQuery, useQueryRefHandlers, useReadQuery } from '@apollo/client';
-import {Badge, BasicTable, Button, Switch, Tooltip, TooltipContent, TooltipTrigger} from '@uselagoon/ui-library';
+import {Badge, BasicTable, Button, Switch, Tooltip, TooltipContent, TooltipTrigger} from '@/ui-library';
 import dayjs from 'dayjs';
 import relativeTime from 'dayjs/plugin/relativeTime';
 import utc from 'dayjs/plugin/utc';
